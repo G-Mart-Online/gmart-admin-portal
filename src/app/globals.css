@@ -40,3 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.ant-btn {
+  box-shadow: none !important; /* Ensure the box-shadow is removed */
+}
