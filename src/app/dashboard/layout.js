@@ -87,12 +87,15 @@ const DashboardLayout = ({ children }) => {
             flex: 1,
             minWidth: 0,
             backgroundColor: "white",
+            display: "flex",
+            justifyContent: "flex-end",
           }}
         />
         <Avatar
           style={{
             backgroundColor: "#f56a00",
             verticalAlign: "middle",
+            marginLeft: "50px",
           }}
           size="large"
         >
