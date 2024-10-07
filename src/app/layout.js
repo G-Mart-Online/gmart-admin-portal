@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
                 colorPrimary: THEME_OPTIONS.colorPrimary,
                 borderRadius: THEME_OPTIONS.boarderRadius,
                 colorBgContainer: THEME_OPTIONS.colourBgContainer,
+                borderRadiusLG: THEME_OPTIONS.borderRadiusLG,
               },
             }}
           >
