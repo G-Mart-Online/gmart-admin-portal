@@ -113,7 +113,7 @@ const DashboardLayout = ({ children }) => {
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
-          overflowX: "hidden", // This prevents horizontal overflow
+          overflowX: "hidden",
         }}
       >
         <Breadcrumb
