@@ -104,10 +104,11 @@ const DashboardLayout = ({ children }) => {
       </Header>
       <Content
         style={{
-          padding: "0 48px",
+          padding: "0 48px 20px 48px",
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
+          overflowX: "hidden", // This prevents horizontal overflow
         }}
       >
         <Breadcrumb
@@ -121,25 +122,15 @@ const DashboardLayout = ({ children }) => {
           style={{
             padding: 24,
             minHeight: 380,
-            background: colorBgContainer,
+            background: "white",
             borderRadius: borderRadiusLG,
             flexGrow: 1,
+            overflow: "auto",
           }}
         >
           {children}
         </div>
       </Content>
-      <Footer
-        style={{
-          textAlign: "center",
-          backgroundColor: "#003459",
-          color: "white",
-          marginTop: "48px",
-          height: "35px",
-        }}
-      >
-        GMart ©{new Date().getFullYear()} Created by GMart SL
-      </Footer>
     </Layout>
   );
 };
