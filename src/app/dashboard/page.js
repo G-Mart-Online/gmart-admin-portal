@@ -7,6 +7,7 @@ import { Col, Row } from "antd";
 import DashboardStatCard from "@/components/dashboard/DashboardStatCard";
 import OrderSummaryCard from "@/components/dashboard/OrderSummaryCard";
 import PaymentSummaryCard from "@/components/dashboard/PaymentSummaryCard";
+import RevenueSummaryCard from "@/components/dashboard/RevenueSummaryCard";
 
 const Dashboard = () => {
   return (
@@ -51,7 +52,9 @@ const Dashboard = () => {
         <Col xs={24} sm={24} md={12} lg={8}>
           <PaymentSummaryCard />
         </Col>
-        <Col xs={24} sm={12} md={12} lg={8}></Col>
+        <Col xs={24} sm={12} md={12} lg={8}>
+          <RevenueSummaryCard />
+        </Col>
       </Row>
     </div>
   );

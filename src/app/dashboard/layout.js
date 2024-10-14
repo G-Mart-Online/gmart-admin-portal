@@ -16,6 +16,7 @@ const DashboardLayout = ({ children }) => {
   const breadcrumbNameMap = {
     "/dashboard": "Dashboard",
     "/dashboard/product-list": "Product List",
+    "/dashboard/order-list": "Order List",
     "/dashboard/seller-supplier": "Sellers & Suppliers",
     "/dashboard/profit-margin": "Profit Margin",
     "/dashboard/customer-agent": "Customer Agent",
@@ -30,18 +31,22 @@ const DashboardLayout = ({ children }) => {
     },
     {
       key: "3",
-      label: <Link href="/dashboard/seller-supplier">Seller/Supplier</Link>,
+      label: <Link href="/dashboard/order-list">Order List</Link>,
     },
     {
       key: "4",
-      label: <Link href="/dashboard/profit-margin">Profit Margin</Link>,
+      label: <Link href="/dashboard/seller-supplier">Seller/Supplier</Link>,
     },
     {
       key: "5",
-      label: <Link href="/dashboard/customer-agent">Customer Agent</Link>,
+      label: <Link href="/dashboard/profit-margin">Profit Margin</Link>,
     },
     {
       key: "6",
+      label: <Link href="/dashboard/customer-agent">Customer Agent</Link>,
+    },
+    {
+      key: "7",
       label: <Link href="/dashboard/affiliate-program">Affiliate Program</Link>,
     },
   ];
