@@ -1,6 +1,6 @@
 export const THEME_OPTIONS = {
   colorPrimary: "#003459",
-  colourBgContainer: "#ECFBFE",
-  boarderRadius: 4,
-  borderRadiusLG: 8,
+  colourBgContainer: "#FFFF",
+  boarderRadius: 2,
+  borderRadiusLG: 4,
 };

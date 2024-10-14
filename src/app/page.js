@@ -1,7 +1,7 @@
 "use client";
 import { Button, Form, Input, Typography } from "antd";
 import styles from "./page.module.css";
-import { LockOutlined, UserOutlined } from "@ant-design/icons";
+import { LockOutlined, RightOutlined, UserOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Logo from "../assets/images/logo.png";
 
@@ -54,7 +54,13 @@ export default function Home() {
             />
           </Form.Item>
           <Form.Item>
-            <Button block type="primary" htmlType="submit">
+            <Button
+              block
+              type="primary"
+              htmlType="submit"
+              icon={<RightOutlined />}
+              iconPosition="end"
+            >
               LOGIN
             </Button>
           </Form.Item>

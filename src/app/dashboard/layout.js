@@ -16,6 +16,7 @@ const DashboardLayout = ({ children }) => {
   const breadcrumbNameMap = {
     "/dashboard": "Dashboard",
     "/dashboard/product-list": "Product List",
+    "/dashboard/order-list": "Order List",
     "/dashboard/seller-supplier": "Sellers & Suppliers",
     "/dashboard/profit-margin": "Profit Margin",
     "/dashboard/customer-agent": "Customer Agent",
@@ -30,18 +31,22 @@ const DashboardLayout = ({ children }) => {
     },
     {
       key: "3",
-      label: <Link href="/dashboard/seller-supplier">Seller/Supplier</Link>,
+      label: <Link href="/dashboard/order-list">Order List</Link>,
     },
     {
       key: "4",
-      label: <Link href="/dashboard/profit-margin">Profit Margin</Link>,
+      label: <Link href="/dashboard/seller-supplier">Seller/Supplier</Link>,
     },
     {
       key: "5",
-      label: <Link href="/dashboard/customer-agent">Customer Agent</Link>,
+      label: <Link href="/dashboard/profit-margin">Profit Margin</Link>,
     },
     {
       key: "6",
+      label: <Link href="/dashboard/customer-agent">Customer Agent</Link>,
+    },
+    {
+      key: "7",
       label: <Link href="/dashboard/affiliate-program">Affiliate Program</Link>,
     },
   ];
@@ -104,10 +109,11 @@ const DashboardLayout = ({ children }) => {
       </Header>
       <Content
         style={{
-          padding: "0 48px",
+          padding: "0 48px 20px 48px",
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
+          overflowX: "hidden",
         }}
       >
         <Breadcrumb
@@ -121,25 +127,15 @@ const DashboardLayout = ({ children }) => {
           style={{
             padding: 24,
             minHeight: 380,
-            background: colorBgContainer,
+            background: "white",
             borderRadius: borderRadiusLG,
             flexGrow: 1,
+            overflow: "auto",
           }}
         >
           {children}
         </div>
       </Content>
-      <Footer
-        style={{
-          textAlign: "center",
-          backgroundColor: "#003459",
-          color: "white",
-          marginTop: "48px",
-          height: "35px",
-        }}
-      >
-        GMart ©{new Date().getFullYear()} Created by GMart SL
-      </Footer>
     </Layout>
   );
 };
